@@ -23,3 +23,62 @@ class Sun(object):
 
 
 
+'''
+装饰器
+'''
+def a(func):
+    def wrapper(*args,**kwargs):
+        print('do something')
+        func(*args,**kwargs)
+    return wrapper
+
+# 带参数的函数装饰器
+def say_hello(contry):
+    def wrapper(func):
+        def deco(*args, **kwargs):
+            if contry == "china":
+                print("你好!")
+            elif contry == "america":
+                print('hello.')
+            else:
+                return
+
+            # 真正执行函数的地方
+            func(*args, **kwargs)
+        return deco
+    return wrapper
+
+# 高阶用法：不带参数的类装饰器
+class logger(object):
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        print("[INFO]: the function {func}() is running..."\
+            .format(func=self.func.__name__))
+        return self.func(*args, **kwargs)
+
+@logger
+def say(something):
+    print("say {}!".format(something))
+
+say("hello")
+
+
+# 高阶用法：带参数的类装饰器
+class logger(object):
+    def __init__(self, level='INFO'):
+        self.level = level
+
+    def __call__(self, func): # 接受函数
+        def wrapper(*args, **kwargs):
+            print("[{level}]: the function {func}() is running..."\
+                .format(level=self.level, func=func.__name__))
+            func(*args, **kwargs)
+        return wrapper  #返回函数
+
+@logger(level='WARNING')
+def say(something):
+    print("say {}!".format(something))
+
+say("hello")

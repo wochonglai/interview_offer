@@ -22,7 +22,6 @@ class Sun(object):
             return cls.__instance
 
 
-
 '''
 装饰器
 '''

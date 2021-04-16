@@ -23,8 +23,7 @@ def quick_sort(arr):
         return quick_sort(less) + [pivot] + quick_sort(greater)
 
 
-
-
+dict
 
 # 思路二
 import random

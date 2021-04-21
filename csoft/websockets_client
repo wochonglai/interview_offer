@@ -5,3 +5,19 @@ def test_auth_token(token)
     conn = create_connection("ws://<IP>:port"+ '/'+ container.uuid", header)
     result = conn.recv()
     assert result is not None
+
+
+
+
+custom_protocol = "your_protocol_here"
+protocol_str = "Sec-WebSocket-Protocol: " + custom_protocol
+ws = websocket.WebSocketApp("ws://localhost:9999/track",
+                            on_open = on_open,
+                            on_message = on_message,
+                            on_error = on_error,
+                            on_close = on_close, 
+                            header = [protocol_str]
+                            )
+                            
+header={'Sec-WebSocket-Protocol': custom_protocol}
+

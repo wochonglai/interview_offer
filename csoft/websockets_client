@@ -1,0 +1,7 @@
+
+# token鉴权使用方法
+def test_auth_token(token)
+    header="Authorization: BEARER" + str(token)
+    conn = create_connection("ws://<IP>:port"+ '/'+ container.uuid", header)
+    result = conn.recv()
+    assert result is not None

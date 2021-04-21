@@ -21,3 +21,23 @@ ws = websocket.WebSocketApp("ws://localhost:9999/track",
                             
 header={'Sec-WebSocket-Protocol': custom_protocol}
 
+
+
+# -*- coding:utf-8 -*-
+import time
+from websocket import  create_connection
+import websocket
+
+while True:
+    ws=websocket.WebSocket()
+    #建立websocket连接，这里传入了 header ，需要注意header的写入方式 
+    ws.connect("ws://xx.xx.xx.xx 8000/port/streaming?vend=Test",
+               header=["x-token:xxxxxxxxxxxxxx",
+                       "x-tenant:T0014",
+                       "x-server:1026"])
+    if ws.connected:
+        #接收实时数据，并打印出来
+        print(ws.recv())
+        #关闭连接 
+        ws.close()
+

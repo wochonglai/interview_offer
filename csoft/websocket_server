@@ -1,0 +1,13 @@
+假设您的应用程序在非SSL Tornado WebSockets上正常运行，请从：
+app.listen(args.listen_port, args.listen_interface)
+至：
+
+app.listen(args.listen_port, args.listen_interface, ssl_options={ 
+        "certfile": os.path.join(lib_dir, "mydomain.crt"),
+        "keyfile": os.path.join(lib_dir, "mydomain.key"),
+    })
+其中“mydomain.crt”和“mydomain.key”是您通常的SSL证书文件，lib_dir是他们所在的目录。
+
+不要忘记改变客户端使用“wss：”
+
+另请注意，如果您指定ssl_options，则在listen调用中指定的端口仍然会被使用。即它不会恢复侦听端口443。

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # WS server example
+# https://websockets.readthedocs.io/en/stable/faq.html
 
 import asyncio
 import websockets

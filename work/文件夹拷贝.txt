@@ -1,0 +1,73 @@
+#coding:utf-8
+
+import os
+import sys
+import getpass
+import shutil
+
+# shutil.copyfile("oldfile","newfile")       oldfile和newfile都只能是文件
+# 创建多级目录：os.makedirs（"/Users/ximi/version"）
+# 创建单个目录：os.mkdir（"project"）
+
+# #复制文件
+# shutil.copyfile('listfile.py', 'd:/test.py')
+# shutil.rmtree("dir")    空目录、有内容的目录都可以删
+# 检验给出的路径是否真地存:os.path.exists()
+
+username = getpass.getuser()
+# 改变当前工作目录
+os.chdir('/Users/' + username + '/Documents/client/myProj/')
+
+
+def handleVersionFile():
+    srcVersionFilePath = os.getcwd()+os.sep+"res/version/version.manifest"
+    dstVersionFilePath = os.getcwd()+os.sep+"tools/myProj/version/version.manifest"
+
+    versionDir = os.getcwd()+os.sep+"tools/myProj/version/"		#os.getcwd() 方法用于返回当前工作目录。
+    if not os.path.exists(versionDir):
+        print versionDir, '\n配置文件目录不存在，创建目录...'
+        # os.mkdir(versionDir)
+        os.makedirs(versionDir)
+        print '创建配置文件目录成功！\n'
+
+    srcProjectFilePath = os.getcwd()+os.sep+"res/version/project.manifest"
+    dstProjectFilePath = os.getcwd()+os.sep+"tools/myProj/version/project.manifest"
+
+    print '拷贝配置文件开始...'
+    if os.path.exists(srcVersionFilePath):
+        shutil.copyfile(srcVersionFilePath,dstVersionFilePath)
+
+    if os.path.exists(srcProjectFilePath):
+        shutil.copyfile(srcProjectFilePath,dstProjectFilePath)
+
+    print '拷贝配置文件结束！\n'
+
+
+def handleAssetsFile():
+    sourceSrcDir = os.getcwd()+os.sep+"src/"
+    dstSrcDir = os.getcwd()+os.sep+"tools/myProj/assets/src/"
+
+    sourceResDir = os.getcwd()+os.sep+"res/"
+    dstResDir = os.getcwd()+os.sep+"tools/myProj/assets/res/"
+    #复制目录，olddir和newdir都只能是目录，且newdir必须不存在
+
+    if os.path.exists(dstSrcDir):
+        print dstSrcDir, '存在先删除'
+        shutil.rmtree(dstSrcDir)
+
+    print '拷贝代码文件夹开始...'
+    shutil.copytree(sourceSrcDir, dstSrcDir)
+    print '拷贝代码文件夹结束！\n'
+
+    if os.path.exists(dstResDir):
+        print dstResDir, '存在先删除'
+        shutil.rmtree(dstResDir)
+
+    print '拷贝资源文件夹开始...'
+    shutil.copytree(sourceResDir, dstResDir)
+    print '拷贝资源文件夹结束！\n'
+
+if __name__ == "__main__":
+    handleVersionFile()
+    handleAssetsFile()
+	

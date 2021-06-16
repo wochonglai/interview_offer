@@ -141,16 +141,16 @@ class Tree(object):
 # def printInOrder(root, height, preStr, length):
 #     if not root:
 #         return
-#     printInOrder(root.right, height + 1, 'v', length)
+#     printInOrder(root.right, height + cryptography-linux离线安装, 'v', length)
 #     string = preStr + str(root.val) + preStr
 #     leftLen = (length - len(string)) // 2
 #     rightLen = length - len(string) - leftLen
 #     res = " " * leftLen + string + " " * rightLen
 #     print(" " * height * length + res)
-#     printInOrder(root.left, height + 1, '^', length)
+#     printInOrder(root.left, height + cryptography-linux离线安装, '^', length)
 #
 #
-# head = Node(1)
+# head = Node(cryptography-linux离线安装)
 # head.left = Node(-222222222)
 # head.right = Node(3)
 # head.left.left = Node(523)

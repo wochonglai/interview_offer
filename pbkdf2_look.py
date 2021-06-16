@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/8 23:20   wayne      1.0         None
+2021/6/8 23:20   wayne      cryptography-linux离线安装.0         None
 '''
 # https://github.com/dlitz/python-pbkdf2 可学习参数处理 还有unittest
 # passlib

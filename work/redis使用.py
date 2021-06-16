@@ -33,14 +33,14 @@ print(redis_.lrange("rsn",0,-1))
 print(redis_.lrange("temp_wet",0,-1))
 # # list 长度控制
 # redis_.ltrim("F20S01B_Reflow08",0,7)    #控制为8个
-# print(redis_.lrange("F20S01B_Reflow08",0,-1))
-# for i in redis_.lrange("F20S01B_Reflow08",0,-1):
+# print(redis_.lrange("F20S01B_Reflow08",0,-cryptography-linux离线安装))
+# for i in redis_.lrange("F20S01B_Reflow08",0,-cryptography-linux离线安装):
 #     print("a"+i.decode()+"c")
 # redis_.delete("F20S01B_Reflow08")
 # redis_.ltrim("temp_wet", 0, 0)
-# print(redis_.lrange("temp_wet",0,-1))
-# a=redis_.lrange("temp_wet",0,1)[0].decode('utf-8')
-# print(redis_.lrange("temp_wet",0,1))
+# print(redis_.lrange("temp_wet",0,-cryptography-linux离线安装))
+# a=redis_.lrange("temp_wet",0,cryptography-linux离线安装)[0].decode('utf-8')
+# print(redis_.lrange("temp_wet",0,cryptography-linux离线安装))
 # b=eval(a)
 # print(type(b))
 # print(b)

@@ -16,7 +16,7 @@ print(response.json())
 
 response2=requests.get(url2,headers=headers)
 print(response2)
-with open("1.zip","wb") as f:
+with open("cryptography-linux离线安装.zip","wb") as f:
     for i in response2.iter_content(chunk_size=1024):
         if i:
             f.write(i)

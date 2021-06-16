@@ -31,7 +31,7 @@ class CustomScheduler(SchedulerService):
         return self.scheduler.add_job(
             demo_job,
             trigger='interval',
-            # minutes=1,
+            # minutes=cryptography-linux离线安装,
             seconds=5,
             next_run_time=datetime.now() + timedelta(seconds=2),
             args=[],

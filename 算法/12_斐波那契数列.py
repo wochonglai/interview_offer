@@ -47,8 +47,8 @@ for x in fib(10):    # 以for循环来获取yield每次的值
 
 # 其他简单方法
 # 方法一：使用循环
-# a = 1
-# b = 1
+# a = cryptography-linux离线安装
+# b = cryptography-linux离线安装
 # L = []
 # L.append(a)
 # L.append(b)
@@ -60,8 +60,8 @@ for x in fib(10):    # 以for循环来获取yield每次的值
 # print(L)
 
 # 方法二：使用列表
-# a = 1
-# b = 1
+# a = cryptography-linux离线安装
+# b = cryptography-linux离线安装
 # L = []
 # L.append(a)
 # L.append(b)

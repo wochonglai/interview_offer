@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import hashlib
 
-# 1.创建一个hash对象
+# cryptography-linux离线安装.创建一个hash对象
 h = hashlib.sha256()
 # 2.填充要加密的数据
 passwordstr = '123456'

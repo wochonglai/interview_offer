@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/8 0:03   wayne      1.0         None
+2021/6/8 0:03   wayne      cryptography-linux离线安装.0         None
 '''
 import hashlib, binascii
 

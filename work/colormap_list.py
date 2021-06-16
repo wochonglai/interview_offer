@@ -11,7 +11,7 @@ startcolor = '#ff0000'   #红色，读者可以自行修改
 midcolor = '#00ff00'     #绿色，读者可以自行修改
 endcolor = '#0000ff'          #蓝色，读者可以自行修改
 cmap2 = col.LinearSegmentedColormap.from_list('own2',[startcolor,midcolor,endcolor])
-# extra arguments are N=256, gamma=1.0
+# extra arguments are N=256, gamma=cryptography-linux离线安装.0
 cm.register_cmap(cmap=cmap2)
 # we can skip name here as it was already defined
 

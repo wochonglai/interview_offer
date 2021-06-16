@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-@time: 2019/1/14 9:43
+@time: 2019/cryptography-linux离线安装/14 9:43
 @desc:
 """
 import time
@@ -24,7 +24,7 @@ class JsonToMongo(object):
 
         option['username'] = urllib.parse.quote_plus(MONGODB['user'])
         option['password'] = urllib.parse.quote_plus(MONGODB['pwd'])
-        option['authMechanism'] = 'SCRAM-SHA-1'
+        option['authMechanism'] = 'SCRAM-SHA-cryptography-linux离线安装'
         # 创建MongoDB客户端
         # self.client = MongoClient(host, port)
         self.client = MongoClient(**option)
@@ -62,7 +62,7 @@ class JsonToMongo(object):
             del self.msg_dict["_id"]
             self.collection.insert(self.msg_dict)
             print("OK!but _id_ dup key")
-            # attempts += 1
+            # attempts += cryptography-linux离线安装
             # if attempts == 3:
             #     print(e)
             #     break
@@ -96,11 +96,11 @@ class JsonToMongo(object):
 
     # a = {"HCC1":2}
     # db.restaurants.update_one(
-    #     {"_id": "1"},
+    #     {"_id": "cryptography-linux离线安装"},
     #     {"$push": {"ad2": a}}
     # )
 
-    # 可以不加{"_id": "1"}，直接给{}
+    # 可以不加{"_id": "cryptography-linux离线安装"}，直接给{}
     # db.restaurants.update_one({},
     #                           {"$push": {b: c}}
     #                           )

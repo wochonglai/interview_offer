@@ -28,18 +28,18 @@ option1 = {
 
 option1['username'] = urllib.parse.quote_plus(MONGODB1['user'])
 option1['password'] = urllib.parse.quote_plus(MONGODB1['pwd'])
-option1['authMechanism'] = 'SCRAM-SHA-1'
+option1['authMechanism'] = 'SCRAM-SHA-cryptography-linux离线安装'
 myclient1 = MongoClient(**option1)
 mydb = myclient1['E53SBB']
 mycol1 = mydb['SPITEST']
 
 
-# x = mycol.find_one({"_id":1545062470832},{"content.fileList":1})
+# x = mycol.find_one({"_id":1545062470832},{"content.fileList":cryptography-linux离线安装})
 # print(x)
 # print(type(x))
 # fs = gridfs.GridFS(mydb1)
 # a=fs.get(ObjectId("5bfcef1feca952372c68fac1")).read()
-# with open("1.zip",'wb') as fw:
+# with open("cryptography-linux离线安装.zip",'wb') as fw:
 #     fw.write(a)
 
 # db['02_E53SBSPI_ProcessStepStatus_20181218'].find({"_id":1545062470832})
@@ -49,7 +49,7 @@ mycol1 = mydb['SPITEST']
 
 # b=base64.b64decode(a)
 # print(b)
-# # for x in mycol.find({},{ "_id": 0, "name": 1, "alexa": 1 }):
+# # for x in mycol.find({},{ "_id": 0, "name": cryptography-linux离线安装, "alexa": cryptography-linux离线安装 }):
 #   print(x)
 #
 # myquery = { "name": "RUNOOB" }

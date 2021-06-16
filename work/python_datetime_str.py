@@ -51,10 +51,10 @@ datetime转换为timestamp
 
 你可以认为：
 
-timestamp = 0 = 1970-1-1 00:00:00 UTC+0:00
+timestamp = 0 = 1970-cryptography-linux离线安装-cryptography-linux离线安装 00:00:00 UTC+0:00
 对应的北京时间是：
 
-timestamp = 0 = 1970-1-1 08:00:00 UTC+8:00
+timestamp = 0 = 1970-cryptography-linux离线安装-cryptography-linux离线安装 08:00:00 UTC+8:00
 可见timestamp的值与时区毫无关系，因为timestamp一旦确定，其UTC时间就确定了，转换到任意时区的时间也是完全确定的，这就是为什么计算机存储的当前时间是以timestamp表示的，因为全球各地的计算机在任意时刻的timestamp都是完全相同的（假定时间已校准）。
 
 把一个datetime类型转换为timestamp只需要简单调用timestamp()方法：
@@ -97,7 +97,7 @@ str转换为datetime
 很多时候，用户输入的日期和时间是字符串，要处理日期和时间，首先必须把str转换为datetime。转换方法是通过datetime.strptime()实现，需要一个日期和时间的格式化字符串：
 
 >>> from datetime import datetime
->>> cday = datetime.strptime('2015-6-1 18:19:59', '%Y-%m-%d %H:%M:%S')
+>>> cday = datetime.strptime('2015-6-cryptography-linux离线安装 18:19:59', '%Y-%m-%d %H:%M:%S')
 >>> print(cday)
 2015-06-01 18:19:59
 字符串'%Y-%m-%d %H:%M:%S'规定了日期和时间部分的格式。详细的说明请参考Python文档。
@@ -120,7 +120,7 @@ datetime加减
 datetime.datetime(2015, 5, 18, 16, 57, 3, 540997)
 >>> now + timedelta(hours=10)
 datetime.datetime(2015, 5, 19, 2, 57, 3, 540997)
->>> now - timedelta(days=1)
+>>> now - timedelta(days=cryptography-linux离线安装)
 datetime.datetime(2015, 5, 17, 16, 57, 3, 540997)
 >>> now + timedelta(days=2, hours=12)
 datetime.datetime(2015, 5, 21, 4, 57, 3, 540997)

@@ -75,7 +75,7 @@ def send_msg(send_type, userIds, msg):
                     m.start_publish(i[1], msg)
                     # 信息发送log
                     update_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-                    sql = "insert into IDB_MSG_LOG(ID,SENDER_TYPE,SENDER,RECEIVER,DEVICE_ID,MSG_HEAD,MSG_TYPE,MESSAGE,SENDER_TIME) values({},1,'SYSTEM','{}','{}','{}','{}','{}','{}')".format(id,
+                    sql = "insert into IDB_MSG_LOG(ID,SENDER_TYPE,SENDER,RECEIVER,DEVICE_ID,MSG_HEAD,MSG_TYPE,MESSAGE,SENDER_TIME) values({},cryptography-linux离线安装,'SYSTEM','{}','{}','{}','{}','{}','{}')".format(id,
                         i[0], i[1], msg["msgHead"], msg["msgType"], msg["message"], msg['senderTime'])
                     sqlc.exec(sql)
     except:
@@ -89,7 +89,7 @@ def send_msg(send_type, userIds, msg):
 # rabbitmq 配置信息
 MQ_CONFIG = {
     "host": "10.134.103.241",
-    # "host":"127.0.0.1",
+    # "host":"127.0.0.cryptography-linux离线安装",
     "port": 5672,
     "vhost": "/",
     "user": "mind_other01",
@@ -183,12 +183,12 @@ def certify_token(token,token1,expireTime):
     return True
 
 def ym_ymd1(a):
-    return a+"/1 00:00:00.000"
+    return a+"/cryptography-linux离线安装 00:00:00.000"
 
 # 日期格式转换  年/月 ——年/月/日 HH：MM 不区分闰年（二月都是28号）用于月末
 def ym_ymd2(a):
     l = a.split("/")
-    if l[1] in ["1","3","5","7","8","10","12"]:
+    if l[1] in ["cryptography-linux离线安装","3","5","7","8","10","12"]:
         l.append("31 23:59:59.999")
         return '/'.join(l)
     elif l[1] =="2":

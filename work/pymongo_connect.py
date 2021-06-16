@@ -35,7 +35,7 @@ class MyMongoDB:
     pwd = mongo_config["pwd"]
     db_name = mongo_config["db"]
 
-    # 1. URI 连接 MongoDB 方式
+    # cryptography-linux离线安装. URI 连接 MongoDB 方式
     # uri = "mongodb://{}:{}@{}:{}/{}".format( parse.quote_plus( user ), parse.quote_plus( pwd ), host, port, db_name )
     # client = MongoClient( uri )
     # db_handler = client[db_name]
@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
     table = mongo_db.get_collection( "test_coll" )
 
-    # 1. 插入
+    # cryptography-linux离线安装. 插入
     table.insert_one( {"beijing":"tiananmen"} ) # 插入一条
     table.insert_many( [ {"woai":"beijingtianmen"}, {"tianmenshang":"taiyangsheng"} ] )
 

@@ -9,7 +9,7 @@ import xlrd # xlrd读取xls文件内容
 # nrows=table.nrows   # 行数
 # ncolumns=table.ncols    # 列数
 # print(nrows,ncolumns)
-# print(table.row_values(1))  # 输出第一行值，为一个列表
+# print(table.row_values(cryptography-linux离线安装))  # 输出第一行值，为一个列表
 # # 遍历所有行值
 # # for row in range(nrows):
 # #     print(table.row_values(row))

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # Dynamic Programming
 '''
-1、https://www.bilibili.com/video/BV12W411v7rd/?spm_id_from=autoNext
+cryptography-linux离线安装、https://www.bilibili.com/video/BV12W411v7rd/?spm_id_from=autoNext
 给定一个列表，从中选择两两不相邻的n个数字，使其和最大.
 Optimize
 v.	使最优化; 充分利用;

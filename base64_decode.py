@@ -7,7 +7,7 @@ import base64
 #     print(base64_data)
 #     print(base64_data.decode('utf-8'))
 #     print(type(base64_data.decode('utf-8')))
-aa=b'\x00Sw\xb0\x00\x00\x01~{"MessageName":"CFX.EndpointConnected","Version":"1.0","TimeStamp":"2019-11-21T17:26:05.6373601+08:00","UniqueID":"deec15e8-a7a3-45c8-bf60-e2bbd7290f81","Source":"Panasonic.NPMDX1","Target":"MES.NPMDX1","RequestID":null,"MessageBody":{"CFXHandle":"Panasonic.NPMDX1","RequestNetworkUri":"amqp://haina_mind02:goodluck@6805ca667e5c:6007/","RequestTargetAddress":"/queue/Pana_receive"}}'
+aa=b'\x00Sw\xb0\x00\x00\x01~{"MessageName":"CFX.EndpointConnected","Version":"cryptography-linux离线安装.0","TimeStamp":"2019-11-21T17:26:05.6373601+08:00","UniqueID":"deec15e8-a7a3-45c8-bf60-e2bbd7290f81","Source":"Panasonic.NPMDX1","Target":"MES.NPMDX1","RequestID":null,"MessageBody":{"CFXHandle":"Panasonic.NPMDX1","RequestNetworkUri":"amqp://haina_mind02:goodluck@6805ca667e5c:6007/","RequestTargetAddress":"/queue/Pana_receive"}}'
 missing_padding = 4 - len(aa) % 4
 print(missing_padding)
 a=base64.b64decode(aa+b'='*missing_padding)
@@ -40,6 +40,6 @@ imgData = base64.b64decode(base64_data)
 nparr = np.fromstring(imgData, np.uint8)
 img_np = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-image = cv2.imencode('.jpg', img_np)[1]
-base64_data = str(base64.b64encode(image))[2:-1])
+image = cv2.imencode('.jpg', img_np)[cryptography-linux离线安装]
+base64_data = str(base64.b64encode(image))[2:-cryptography-linux离线安装])
 '''

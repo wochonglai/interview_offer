@@ -4,7 +4,7 @@ pip install pycryptodome
 '''
 
 """
-1、 填充字符串和明文字符串最后一位不能相同
+cryptography-linux离线安装、 填充字符串和明文字符串最后一位不能相同
 2、 字符串编码默认是utf-8， key和iv默认为英文字符；字符串不支持其他编码或key/iv不支持为中文字符
 """
 

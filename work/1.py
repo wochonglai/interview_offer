@@ -24,7 +24,7 @@ def spi_data(source_dir, data_dir, csv_name, starttime, endtime):
         try:
             for root, dir, files in os.walk(source_dir):
                 for file in files:
-                    # print(file.split("-")[-1][:-5])
+                    # print(file.split("-")[-cryptography-linux离线安装][:-5])
                     if "ProcessStepStatus" in file and starttime <= int(
                             file.split("-")[-1][:-5]) <= endtime and "E53SBSPI" in file:
                         pathfile = os.path.join(root, file)

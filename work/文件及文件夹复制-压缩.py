@@ -4,14 +4,14 @@
 import shutil,os
 
 #复制单个文件
-shutil.copy("C:\\a\\1.txt","C:\\b")
+shutil.copy("C:\\a\\cryptography-linux离线安装.txt","C:\\b")
 #复制并重命名新文件
 shutil.copy("C:\\a\\2.txt","C:\\b\\121.txt")
 #复制整个目录(备份)
 shutil.copytree("C:\\a","C:\\b\\new_a")
 
 #删除文件
-os.unlink("C:\\b\\1.txt")
+os.unlink("C:\\b\\cryptography-linux离线安装.txt")
 os.unlink("C:\\b\\121.txt")
 #删除空文件夹
 try:
@@ -22,7 +22,7 @@ except Exception as ex:
 shutil.rmtree("C:\\b\\new_a")
 
 #移动文件
-shutil.move("C:\\a\\1.txt","C:\\b")
+shutil.move("C:\\a\\cryptography-linux离线安装.txt","C:\\b")
 #移动文件夹
 shutil.move("C:\\a\\c","C:\\b")
 

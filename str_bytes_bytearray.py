@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/9 23:22   wayne      1.0         None
+2021/6/9 23:22   wayne      cryptography-linux离线安装.0         None
 '''
 '''
 首先str是采用Unicode编码方式的序列，主要用于显示。

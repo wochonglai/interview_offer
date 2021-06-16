@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/7 23:08   wayne      1.0         None
+2021/6/7 23:08   wayne      cryptography-linux离线安装.0         None
 '''
 '''
 # 在Linux操作系统下，Python3的默认环境编码变为了utf-8编码，所以在编写代码的时候，字符串大部分都是以utf-8处理

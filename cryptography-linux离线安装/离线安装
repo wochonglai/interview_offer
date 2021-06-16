@@ -1,0 +1,20 @@
+pip3 install cryptography -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+
+https://blog.csdn.net/qq_32656561/article/details/107554328
+
+pip download cryptography
+将这个文件夹传输到内网电脑，然后根据下载时显示的安装顺序倒序安装
+
+ pip3 install cryptography -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple/
+Collecting cryptography
+  Downloading http://mirrors.aliyun.com/pypi/packages/b2/26/7af637e6a7e87258b963f1731c5982fb31cd507f0d90d91836e446955d02/cryptography-3.4.7-cp36-abi3-manylinux2014_x86_64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 9.7 MB/s
+Collecting cffi>=1.12
+  Downloading http://mirrors.aliyun.com/pypi/packages/5c/0f/e07df370fac0e99e938edc62c8a15e54b9d75605e11838fa0ef300118e1d/cffi-1.14.5-cp38-cp38-manylinux1_x86_64.whl (411 kB)
+     |████████████████████████████████| 411 kB 14.0 MB/s
+Collecting pycparser
+  Downloading http://mirrors.aliyun.com/pypi/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl (112 kB)
+     |████████████████████████████████| 112 kB 18.8 MB/s
+Installing collected packages: pycparser, cffi, cryptography
+Successfully installed cffi-1.14.5 cryptography-3.4.7 pycparser-2.20

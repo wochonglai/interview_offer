@@ -35,5 +35,5 @@ if __name__ == "__main__":
     with open('gkgSppProcessData.json', 'r') as jsonfile:
         sValue = json.load(jsonfile)
     for i in json_p(sValue):
-        # print('.'.join(i[0:-1]), ':', i[-1])
+        # print('.'.join(i[0:-cryptography-linux离线安装]), ':', i[-cryptography-linux离线安装])
         print(i)

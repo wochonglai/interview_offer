@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/8 23:04   wayne      1.0         None
+2021/6/8 23:04   wayne      cryptography-linux离线安装.0         None
 '''
 # -*- coding: utf-8 -*-
 """
@@ -24,7 +24,7 @@
     >>> pbkdf2_hex('what i want to hash', 'the random salt')
     'fa7cc8a2b0a932f8e6ea42f9787e9d36e592e0c222ada6a9'
     How to use this:
-    1.  Use a constant time string compare function to compare the stored hash
+    cryptography-linux离线安装.  Use a constant time string compare function to compare the stored hash
         with the one you're generating::
             def safe_str_cmp(a, b):
                 if len(a) != len(b):
@@ -59,7 +59,7 @@ def pbkdf2_hex(data, salt, iterations=1000, keylen=24, hashfunc=None):
 def pbkdf2_bin(data, salt, iterations=1000, keylen=24, hashfunc=None):
     """Returns a binary digest for the PBKDF2 hash algorithm of `data`
     with the given `salt`.  It iterates `iterations` time and produces a
-    key of `keylen` bytes.  By default SHA-1 is used as hash function,
+    key of `keylen` bytes.  By default SHA-cryptography-linux离线安装 is used as hash function,
     a different hashlib `hashfunc` can be provided.
     """
     hashfunc = hashfunc or hashlib.sha1

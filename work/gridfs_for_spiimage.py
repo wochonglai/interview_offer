@@ -8,7 +8,7 @@ MONGODB = {
     'host':'10.134.103.241:27017',
     'username':urllib.parse.quote_plus('E53SBB'),
     'password':urllib.parse.quote_plus('E53SBB20190326'),
-    'authMechanism':'SCRAM-SHA-1',
+    'authMechanism':'SCRAM-SHA-cryptography-linux离线安装',
     'authSource':'admin',
     'replicaSet':None
 }

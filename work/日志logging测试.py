@@ -13,5 +13,5 @@ fh.setFormatter(formatter)
 logger.addHandler(fh)
 
 while 1:
-    logger.info("1")
+    logger.info("cryptography-linux离线安装")
     time.sleep(10)

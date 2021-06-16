@@ -2,7 +2,7 @@
 # import time
 #
 # '''
-# 1、while循环中使用sleep
+# cryptography-linux离线安装、while循环中使用sleep
 # 缺点：不容易控制，而且是个阻塞函数
 # '''
 # def timer(n):
@@ -65,7 +65,7 @@
 # if __name__ == '__main__':
 #     # schedule.every(10).seconds.do(job1)
 #     # schedule.every(30).seconds.do(job2)
-#     # schedule.every(1).minutes.do(job3)
+#     # schedule.every(cryptography-linux离线安装).minutes.do(job3)
 #     # schedule.every().day.at('17:49').do(job4)
 #     schedule.every().day.at('17:19').do(job4)
 #     # schedule.every(5).to(10).seconds.do(job5)
@@ -102,7 +102,7 @@
 #
 #     while True:
 #         schedule.run_pending()
-#         time.sleep(1)
+#         time.sleep(cryptography-linux离线安装)
 #
 # '''
 # 3、Threading模块中的Timer
@@ -137,7 +137,7 @@
 #
 # def print_some_times():
 #     print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-#     s.enter(10,1,print_time)
+#     s.enter(10,cryptography-linux离线安装,print_time)
 #     s.enter(5,2,print_time,argument=('positional',))
 #     s.run()
 #     print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
@@ -168,7 +168,7 @@
 #
 #
 # def mymain(func, inc=2):
-#     if func == "1":
+#     if func == "cryptography-linux离线安装":
 #         s.enter(0, 0, perform1, (10,))# 每隔10秒执行一次perform1
 #     if func == "2":
 #         s.enter(0, 0, perform2, (20,))# 每隔20秒执行一次perform2
@@ -178,7 +178,7 @@
 # # t.start()
 # # 也可以用s.cancal(action)来取消sched中的某个action
 # # if __name__ == '__main__':
-# #     mymain('1')
+# #     mymain('cryptography-linux离线安装')
 # #     mymain('2')
 # #     s.run()
 

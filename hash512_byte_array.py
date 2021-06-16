@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/9 22:24   wayne      1.0         None
+2021/6/9 22:24   wayne      cryptography-linux离线安装.0         None
 '''
 import hashlib
 a = "拉风"

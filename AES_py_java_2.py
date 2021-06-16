@@ -129,7 +129,7 @@ if __name__ == "__main__":
      */
     public static String AESDncode(String appkey, String content) {
         try {
-            // 1.构造密钥生成器，指定为AES算法,不区分大小写
+            // cryptography-linux离线安装.构造密钥生成器，指定为AES算法,不区分大小写
             KeyGenerator keygen = KeyGenerator.getInstance("AES");
             // 2.根据ecnodeRules规则初始化密钥生成器
             SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");

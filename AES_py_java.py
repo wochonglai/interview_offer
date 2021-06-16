@@ -7,7 +7,7 @@
 
 @Modify Time      @Author    @Version    @Desciption
 ------------      -------    --------    -----------
-2021/6/10 21:57   wayne      1.0         None
+2021/6/10 21:57   wayne      cryptography-linux离线安装.0         None
 '''
 # https://blog.csdn.net/qq_39248703/article/details/100999523
 # 参考2 https://blog.csdn.net/qq_28205153/article/details/55798628

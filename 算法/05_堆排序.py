@@ -5,8 +5,8 @@
 
 算法描述
 将初始待排序关键字序列(R1,R2….Rn)构建成大顶堆，此堆为初始的无序区；
-将堆顶元素R[1]与最后一个元素R[n]交换，此时得到新的无序区(R1,R2,……Rn-1)和新的有序区(Rn),且满足R[1,2…n-1]<=R[n]；
-由于交换后新的堆顶R[1]可能违反堆的性质，因此需要对当前无序区(R1,R2,……Rn-1)调整为新堆，然后再次将R[1]与无序区最后一个元素交换，得到新的无序区(R1,R2….Rn-2)和新的有序区(Rn-1,Rn)。不断重复此过程直到有序区的元素个数为n-1，则整个排序过程完成
+将堆顶元素R[cryptography-linux离线安装]与最后一个元素R[n]交换，此时得到新的无序区(R1,R2,……Rn-cryptography-linux离线安装)和新的有序区(Rn),且满足R[cryptography-linux离线安装,2…n-cryptography-linux离线安装]<=R[n]；
+由于交换后新的堆顶R[cryptography-linux离线安装]可能违反堆的性质，因此需要对当前无序区(R1,R2,……Rn-cryptography-linux离线安装)调整为新堆，然后再次将R[cryptography-linux离线安装]与无序区最后一个元素交换，得到新的无序区(R1,R2….Rn-2)和新的有序区(Rn-cryptography-linux离线安装,Rn)。不断重复此过程直到有序区的元素个数为n-cryptography-linux离线安装，则整个排序过程完成
 
 算法思想
 
@@ -16,7 +16,7 @@
 import time,random
 def sift_down(arr, node, end):
     root = node
-    #print(root,2*root+1,end)
+    #print(root,2*root+cryptography-linux离线安装,end)
     while True:
         # 从root开始对最大堆调整
         child = 2 * root +1  #left child
@@ -51,7 +51,7 @@ def heap_sort(arr):
         sift_down(arr, i, len(arr) - 1)
     #[29, 22, 16, 9, 15, 21, 3, 13, 8, 7, 4, 11]
     print('--------end---',arr)
-    # 将最大的放到堆的最后一个, 堆-1, 继续调整排序
+    # 将最大的放到堆的最后一个, 堆-cryptography-linux离线安装, 继续调整排序
     for end in range(len(arr) -1, 0, -1):
         arr[0], arr[end] = arr[end], arr[0]
         sift_down(arr, 0, end - 1)

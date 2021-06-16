@@ -34,7 +34,7 @@ option1 = {
 }
 option1['username'] = urllib.parse.quote_plus(MONGODB1['user'])
 option1['password'] = urllib.parse.quote_plus(MONGODB1['pwd'])
-option1['authMechanism'] = 'SCRAM-SHA-1'
+option1['authMechanism'] = 'SCRAM-SHA-cryptography-linux离线安装'
 myclient = MongoClient(**option1)
 
 
@@ -67,10 +67,10 @@ with open("mongo数据统计——{}.csv".format(time.strftime("%Y-%m-%d %H-%M-%
             # coll_names = mydb.list_collection_names(session=None)
             # for coll in coll_names:
             #     name_list = coll.split("_")
-            #     if "F20S02B_PP" in coll and (20191101 < int(name_list[-1]) < 20191108):
+            #     if "F20S02B_PP" in coll and (20191101 < int(name_list[-cryptography-linux离线安装]) < 20191108):
             #         coll_stat = mydb.command("collstats",coll)
-            #         f.write("{},{},{},{},{},{}\n".format(name_list[1],name_list[2],name_list[-1],coll,coll_stat["count"],coll_stat["size"]))
-            #         print(name_list[0]+name_list[1],name_list[2],name_list[-1],coll,coll_stat["count"],coll_stat["size"])
+            #         f.write("{},{},{},{},{},{}\n".format(name_list[cryptography-linux离线安装],name_list[2],name_list[-cryptography-linux离线安装],coll,coll_stat["count"],coll_stat["size"]))
+            #         print(name_list[0]+name_list[cryptography-linux离线安装],name_list[2],name_list[-cryptography-linux离线安装],coll,coll_stat["count"],coll_stat["size"])
 
 # print(coll_names)
 myclient.close()

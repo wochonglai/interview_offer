@@ -26,7 +26,7 @@ if MONGODB['user'] and MONGODB['pwd']:
     # py2中为urllib.quote_plus
     option['username'] = urllib.parse.quote_plus(MONGODB['user'])
     option['password'] = urllib.parse.quote_plus(MONGODB['pwd'])
-    option['authMechanism'] = 'SCRAM-SHA-1'
+    option['authMechanism'] = 'SCRAM-SHA-cryptography-linux离线安装'
 
 client = pymongo.MongoClient(**option)
 # option方式-------end
@@ -52,7 +52,7 @@ client = pymongo.MongoClient(**option)
 #     username = urllib.parse.quote_plus(MONGODB['user'])
 #     password = urllib.parse.quote_plus(MONGODB['pwd'])
 #     auth_str = '%s:%s@' % (username, password)
-#     params.append('authMechanism=SCRAM-SHA-1')
+#     params.append('authMechanism=SCRAM-SHA-cryptography-linux离线安装')
 # else:
 #     auth_str = ''
 #

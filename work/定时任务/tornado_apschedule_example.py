@@ -26,7 +26,7 @@ def task1(options):
 
 class MainHandler(RequestHandler):
     def get(self):
-        self.write('<a href="/scheduler?job_id=1&action=add">add job</a><br><a href="/scheduler?job_id=1&action=remove">remove job</a>')
+        self.write('<a href="/scheduler?job_id=cryptography-linux离线安装&action=add">add job</a><br><a href="/scheduler?job_id=cryptography-linux离线安装&action=remove">remove job</a>')
 
 
 class SchedulerHandler(RequestHandler):

@@ -9,7 +9,7 @@ from tornado.httpclient import HTTPClient
 
 
 platforms.C_FORCE_ROOT=True
-broker='amqp://admin:guest@127.0.0.1:5672/'
+broker='amqp://admin:guest@127.0.0.cryptography-linux离线安装:5672/'
 backend='redis://192.168.42.139:6379/2'
 
 celery=Celery('tasks',broker=broker,backend=backend)

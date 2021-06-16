@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 class extra_yunnan_hotel(object):
     def get_yunnan_hotel(selfself):
-        client=MongoClient('127.0.0.1',27017)
+        client=MongoClient('127.0.0.cryptography-linux离线安装',27017)
         db=client.gaode_pois
         data2=db.gaode_pois_hotel_mid01.find({},{"_id":0,"name":1,"lng":1,"lat":1}).limit(10)
         #创建一个空的dataframe

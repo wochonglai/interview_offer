@@ -1,0 +1,28 @@
+https://www.jianshu.com/p/1e5feccb37d9 Python Web——Gunicorn 源码解析 - 简书
+Python中socket经ssl加密后server开多线程 - 你说我记 - 博客园  https://www.cnblogs.com/lzqrkn/p/10737154.html
+python3 socket ssl_如何通过Python3和ssl实现加密通信功能 https://blog.csdn.net/weixin_39827905/article/details/110904487
+记一次 gunicorn 启动 flask 出问题的经历 - 华腾海神 - 博客园 https://www.cnblogs.com/haiton/p/11295495.html
+
+Switch to use SSLContext · Issue #1140 · benoitc/gunicorn · GitHub https://github.com/benoitc/gunicorn/issues/1140
+Can't load any Diffie-Hellman ciphers. · Issue #1810 · benoitc/gunicorn · GitHub https://github.com/benoitc/gunicorn/issues/1810
+
+I managed to make this work , but I had to rewrite workers/sync.py
+ and make the ssl.wrap_socket a SSLContext.wrap_socket , though this is test..
+ what I ended up doing was generating a dhparam via openssl and loading it via context.load_dh_params
+
+    def handle(self, listener, client, addr):
+        req = None
+        try:
+            if self.cfg.is_ssl:
+                context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+                context.options |= ssl.OP_SINGLE_DH_USE
+                context.set_ciphers(self.cfg.ssl_options.get('ciphers'))
+                context.load_cert_chain(self.cfg.ssl_options.get('certfile'), keyfile=self.cfg.ssl_options.get('keyfile'))
+                context.load_verify_locations(cafile=self.cfg.ssl_options.get('ca_certs'))
+                context.load_dh_params('ssl_cert/dhparam.crt')
+                client = context.wrap_socket(client, server_side=True, do_handshake_on_connect=False)
+
+
+https://docs.gunicorn.org/en/stable/settings.html
+ --ssl-version TLSV1_2
+ --cipher “password”

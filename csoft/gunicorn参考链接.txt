@@ -33,3 +33,15 @@ https://docs.gunicorn.org/en/stable/settings.html
 
 Does Gunicorn --keyfile support encrypted private keys? #2410
  https://github.com/benoitc/gunicorn/issues/2410
+
+Similarly with gevent I see that it can be run from a Python-script entry point and take an ssl context param, e.g.:
+    from gevent.pywsgi import WSGIServer
+    from gevent.ssl import SSLContext
+
+    context = SSLContext()
+    context.load_verify_locations(cafile=CA_FILE)
+    context.load_cert_chain(certfile=CERT_FILE, keyfile=KEY_FILE, password=PASSPHRASE)
+
+    http_server = WSGIServer(..., ssl_context=context)
+
+https://www.cnblogs.com/fengff/p/9225859.html

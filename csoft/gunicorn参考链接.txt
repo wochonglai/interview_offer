@@ -26,3 +26,10 @@ I managed to make this work , but I had to rewrite workers/sync.py
 https://docs.gunicorn.org/en/stable/settings.html
  --ssl-version TLSV1_2
  --cipher “password”
+
+ 折中方法：
+ sudo /path/to/gunicorn --certfile server.crt --keyfile server.key --user nobody --group nogroup echo:app
+
+
+Does Gunicorn --keyfile support encrypted private keys? #2410
+ https://github.com/benoitc/gunicorn/issues/2410
